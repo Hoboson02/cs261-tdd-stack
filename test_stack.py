@@ -17,19 +17,19 @@ class TestStack(unittest.TestCase):
         except NameError:
             self.fail("Could not instantiate Stack.")
 
-    # def test_initially_empty(self):
-    #     """
-    #     A stack is initially empty.
-    #     """
-    #     s = Stack()
-    #     self.assertTrue(s.is_empty())
+    def test_initially_empty(self):
+        """
+        A stack is initially empty.
+        """
+        s = Stack()
+        self.assertTrue(s.is_empty())
 
-    # def test_initial_pop(self):
-    #     """
-    #     Popping from an empty stack raises IndexError.
-    #     """
-    #     s = Stack()
-    #     self.assertRaises(IndexError, s.pop)
+    def test_initial_pop(self):
+        """
+        Popping from an empty stack raises IndexError.
+        """
+        s = Stack()
+        self.assertRaises(IndexError, s.pop)
 
     # def test_initial_peek(self):
     #     """
