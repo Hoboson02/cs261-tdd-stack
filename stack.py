@@ -21,7 +21,7 @@ class Stack:
     def peek(self): 
         if self.is_empty():
             raise IndexError
-        return 
+        return self.stack[0]
     
     def push(self, value): 
         return self.stack.append(value)
