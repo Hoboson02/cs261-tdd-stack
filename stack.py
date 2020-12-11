@@ -17,3 +17,12 @@ class Stack:
         if self.is_empty():
             raise IndexError
         return self.stack.pop()
+
+    def peek(self): 
+        if self.is_empty():
+            raise IndexError
+        return 
+    
+    def push(self, value): 
+        return self.stack.append(value)
+        

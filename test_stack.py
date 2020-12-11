@@ -38,13 +38,13 @@ class TestStack(unittest.TestCase):
         s = Stack()
         self.assertRaises(IndexError, s.peek)
 
-    # def test_initial_push(self):
-    #     """
-    #     Pushing a value onto the stack means the stack is no longer empty.
-    #     """
-    #     s = Stack()
-    #     s.push('fee')
-    #     self.assertFalse(s.is_empty())
+    def test_initial_push(self):
+        """
+        Pushing a value onto the stack means the stack is no longer empty.
+        """
+        s = Stack()
+        s.push('fee')
+        self.assertFalse(s.is_empty())
 
     # def test_peek_one(self):
     #     """
