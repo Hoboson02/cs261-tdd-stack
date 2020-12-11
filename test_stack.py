@@ -62,48 +62,48 @@ class TestStack(unittest.TestCase):
         s.push('fee')
         self.assertEqual('fee', s.pop())
 
-    # def test_peek_two(self):
-    #     """
-    #     Peeking at a stack with two values returns the last pushed value.
-    #     """
-    #     s = Stack()
-    #     s.push('fee')
-    #     s.push('fi')
-    #     self.assertEqual('fi', s.peek())
+    def test_peek_two(self):
+        """
+        Peeking at a stack with two values returns the last pushed value.
+        """
+        s = Stack()
+        s.push('fee')
+        s.push('fi')
+        self.assertEqual('fi', s.peek())
 
-    # def test_peek_state(self):
-    #     """
-    #     Peeking doesn't mutate the stack.
-    #     """
-    #     s = Stack()
-    #     s.push('fee')
-    #     s.push('fi')
-    #     self.assertEqual('fi', s.peek())
-    #     self.assertEqual('fi', s.peek())
+    def test_peek_state(self):
+        """
+        Peeking doesn't mutate the stack.
+        """
+        s = Stack()
+        s.push('fee')
+        s.push('fi')
+        self.assertEqual('fi', s.peek())
+        self.assertEqual('fi', s.peek())
 
-    # def test_pop_two(self):
-    #     """
-    #     Popping from a stack with two values returns the last pushed value.
-    #     """
-    #     s = Stack()
-    #     first_value = fake_value()
-    #     second_value = fake_value()
-    #     s.push(first_value)
-    #     s.push(second_value)
-    #     self.assertEqual(second_value, s.pop())
+    def test_pop_two(self):
+        """
+        Popping from a stack with two values returns the last pushed value.
+        """
+        s = Stack()
+        first_value = fake_value()
+        second_value = fake_value()
+        s.push(first_value)
+        s.push(second_value)
+        self.assertEqual(second_value, s.pop())
 
-    # def test_pop_state(self):
-    #     """
-    #     Popping removes the last pushed value from the stack.
-    #     """
-    #     s = Stack()
-    #     first_value = fake_value()
-    #     second_value = fake_value()
-    #     s.push(first_value)
-    #     s.push(second_value)
-    #     self.assertEqual(second_value, s.pop())
-    #     self.assertEqual(first_value, s.pop())
-    #     self.assertTrue(s.is_empty())
+    def test_pop_state(self):
+        """
+        Popping removes the last pushed value from the stack.
+        """
+        s = Stack()
+        first_value = fake_value()
+        second_value = fake_value()
+        s.push(first_value)
+        s.push(second_value)
+        self.assertEqual(second_value, s.pop())
+        self.assertEqual(first_value, s.pop())
+        self.assertTrue(s.is_empty())
 
 
 def fake_value():
