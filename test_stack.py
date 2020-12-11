@@ -1,5 +1,5 @@
 # DO NOT MODIFY THIS FILE
-# Run me via: python3 -m unittest test_stack
+# Run me via: python -m unittest test_stack
 
 import unittest
 import time
@@ -31,12 +31,12 @@ class TestStack(unittest.TestCase):
         s = Stack()
         self.assertRaises(IndexError, s.pop)
 
-    # def test_initial_peek(self):
-    #     """
-    #     Peeking at an empty stack raises IndexError.
-    #     """
-    #     s = Stack()
-    #     self.assertRaises(IndexError, s.peek)
+    def test_initial_peek(self):
+        """
+        Peeking at an empty stack raises IndexError.
+        """
+        s = Stack()
+        self.assertRaises(IndexError, s.peek)
 
     # def test_initial_push(self):
     #     """
